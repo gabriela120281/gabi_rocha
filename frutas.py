@@ -1,31 +1,42 @@
 frutas = ["maçã", "banana", "uva"]
 numeros = [1, 2, 3, 4]
 
-# Acessando elementos 
-print("Primeira fruta:", frutas[0])  # maçã
-print("Última fruta:", frutas[-1])  # uva
+# Outras Operações
+print("Lista original 'numeros':" , numeros)
+print("Soma dos números:" , sum(numeros))
+print("Maior número:" , max(numeros))
+print("Menor número:" , min(numeros))
+numeros.reverse()
+print ("Reversa:", numeros)
+numeros.sort()
+print("Ordenada crescente:", numeros)
+numeros.sort(reverse=True)
+print("Ordenada decrescente:", numeros)
 
-# Alterando elementos
-frutas[1] = "banana-nanica"
-print("Após aletrar:", frutas)
+# Iterar sobre lista
+for fruta in frutas:
+    print("Fruta:", fruta)
 
-# Adicinando elementos
-frutas.append("morango")   # adiciona no final
-frutas.insert(1, "pera")   # adiciona na posição 1
+# Lis comprehension (exemplo simples)
+quadrados = [n * n for n in [1, 2, 3, 4, 5]]
+print("Quadrados:", quadrados)
 
-# Removendo elementos 
-frutas.remove("uva")       # remove pelo valor
-ultima = frutas.pop()      #remove e retornar o último
-print("Após remover 'uva' e pop():", frutas, "| Última removida:", ultima)
+# Crie uma lista 
+lista_compras = ["leite", "arroz", "feijão"]
+numeros = [1, 2, 3, 4]
+print("Lista de hoje", lista_compras)
 
-# Tamanho (quantidade de elementos)
-print("Tamanho da lista 'fruta':", len(frutas))
+# Adicionando elementos
+lista_compras.append("Sal")          # Adiciona no final
+lista_compras.insert(1, "Macarrão")  # Adiciona na posição 1
+print("Após adicionar:", lista_compras)
 
-# Fatiamento (slicing)
-print("Fatiamento [0:2]:", frutas [0:2])
+# Remover elementos
+lista_compras.remove("Macarrão")    # Remove pelo valor
+ultima = lista_compras.pop()        # Remove e retorna a ultima
+print("Após remover 'Macarrão' e pop():", lista_compras, "| ùltima removida:" , ultima)
 
-# Verificar se um item está na lista
-print("Tem maçã?", "maçã" in frutas)
+# Teste
 
 
 
