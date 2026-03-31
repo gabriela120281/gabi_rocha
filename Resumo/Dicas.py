@@ -109,9 +109,120 @@ print("Primeiro nome:", nomes[0])
 
 # Erro comum: achar que começa em 1
 
+# 🔹 LAÇO FOR
+# Explicação: percorre uma sequência (lista, string, range)
+
+for i in range(5):
+    print("Número:", i)
+
+# Dica: o range(5) gera valores de 0 até 4
+
+
+# 🔹 LAÇO WHILE
+# Explicação: repete enquanto a condição for verdadeira
+
+contador = 0
+
+while contador < 3:
+    print("Contagem:", contador)
+    contador += 1
+
+# Erro comum: esquecer de atualizar a variável → loop infinito!
+
+
+# 🔹 BREAK
+# Explicação: interrompe o laço antes do fim
+
+for letra in "Python":
+    if letra == "h":
+        break
+    print(letra)
+
+# Dica: útil para parar quando encontra o que procura
+
+
+# 🔹 CONTINUE
+# Explicação: pula para a próxima iteração
+
+for num in range(1, 6):
+    if num == 3:
+        continue
+    print(num)
+
+# Dica: ignora apenas o caso específico, mas continua o laço
+
+
+# 🔹 LISTA DE COMPRAS
+# Explicação: percorrer itens de uma lista
+
+compras = ["Arroz", "Feijão", "Leite", "Pão"]
+
+for item in compras:
+    print("Comprar:", item)
+
+# Dica: o for facilita quando temos várias tarefas repetitivas
+
+
+# 🔹 CONTAGEM DE MOEDAS
+# Explicação: somar valores com while
+
+moedas = 0
+
+while moedas < 5:
+    print("Coloquei uma moeda")
+    moedas += 1
+
+print("Total de moedas:", moedas)
+
+# Erro comum: esquecer de atualizar a variável → loop infinito
+
+
+# 🔹 VERIFICAR SENHA
+# Explicação: repetir até acertar
+
+senha_correta = "python123"
+tentativa = ""
+
+while tentativa != senha_correta:
+    tentativa = input("Digite a senha: ")
+
+print("Acesso liberado!")
+
+# Dica: usar while quando não sabemos quantas vezes será repetido
+
+
+# 🔹 TABUADA
+# Explicação: gerar cálculos automaticamente
+
+numero = 7
+
+for i in range(1, 11):
+    print(f"{numero} x {i} = {numero * i}")
+
+# Dica: range ajuda a criar sequências numéricas
+
+
+# 🔹 FILTRAR NOMES
+# Explicação: pular nomes indesejados
+
+nomes = ["Ana", "João", "Maria", "Pedro"]
+
+for nome in nomes:
+    if nome == "Maria":
+        continue
+    print("Nome válido:", nome)
+
+# Dica: continue serve para ignorar casos específicos
+
 
 # -------------------------------
 # ✅ FINAL
 # -------------------------------
 
-print("\n--- Fim dos estudos básicos de Python ---")
+print("\n--- Fim dos estudos de laços de repetição ---")
+
+
+
+# -------------------------------
+# ✅ FINAL
+# -------------------------------
